@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="pop-up" id="pop-up">
+        <section class="edit-todo" id='edit-todo'>
+            <input type="text" id="edit-title" placeholder="Titlu" autocomplete="off">
+            <textarea name="todo-text" id="edit-text" placeholder="Creați o notă" autocomplete="off"></textarea>
+
+            <footer class="pop-up-footer">
+                <input type="file" class="file-input" id="file-input">
+                <ul class="colors">
+                    <li id="white-btn" class="color white"></li>
+                    <li id="red-btn" class="color red"></li>
+                    <li id="blue-btn" class="color blue"></li>
+                    <li id="green-btn" class="color green"></li>
+                </ul>
+                <i class="fa fa-paperclip icon" aria-hidden="true" id="edit-backgound"></i>
+                <i class="fa fa-trash-o icon" aria-hidden="true" id="delete-todo"></i>
+                <p class="save-edit-btn" id="edit-todo-btn">Iesire</p>
+            </footer>
+        </section>
+    </div>
+
+    <div class="container" id="container">
+        <header class="header">
+            <div class="logo">
+                <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="logo">
+                <h3>Keep</h3>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search.." autocomplete="off" class="search-input" id="search-input">
+            </div>
+        </header>
+
+        <section class="create-todo-card" id="create-todo-card">
+            <input type="text" id="create-todo-title" placeholder="Titlu">
+            <textarea class='create-todo-text' name="todoText" id="create-todo-text" placeholder="Creați o notă"></textarea>
+
+            <footer class="create-todo-footer">
+                <p class="create-todo-btn" id="create-todo-btn">Add Todo</p>
+            </footer>
+        </section>
+
+
+
+        <section id="todo-list" class="todo-list">
+
+        </section>
+    </div>
+</body>
+
+</html>
